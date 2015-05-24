@@ -6,9 +6,9 @@ def check(num)
 
     when 0...50
       puts "The given Number is in between 0 and 50"
-    when 50 .. 100
+    when 50 ... 100
       puts "The given Number is in between 50 and 100"
-    when num>100
+    else
       puts "The given Number is greater than 100"
   end
 end
