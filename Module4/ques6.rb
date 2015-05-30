@@ -6,15 +6,15 @@ Examples: number_of_squares(5) == 2 number_of_squares(10) == 3
 =end
 
 def number_of_squares(num)
-   $c=0
+   c=0
   for i in 1..num
     for j in 1..num
       if (i==j*j)
-        $c=$c+1
+        c=c+1
       end
     end
   end
-  return $c
+  return c
 end
 
 puts "Enter any Number"

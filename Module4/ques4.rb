@@ -17,22 +17,19 @@ class Distribution
         def median(nums)
 
                 sortedarray=nums.sort
-                p sortedarray
                 puts "\nThe median of the given set of numbers is :"
                 if($len%2!=0)
                         position=(sortedarray.length+1)/2
                         puts "#{sortedarray[position-1]}"
                 else
                         pos1=(sortedarray.length)/2
-                        p pos1
                         pos2=((sortedarray.length)/2)+1
-                        p pos2
                         puts "#{(sortedarray[pos1-1]+sortedarray[pos2-1]).to_f/2}"
                 end
         end
         def split_into_evenly_sized_subsets(nums)
                 puts "\nThe evenly sized subsets of given set of numbers are:"
-                nums.each_slice($len/2){|row| p row}
+                nums.each_slice($len/2){|element| p element}
         end
 end
 

@@ -13,8 +13,8 @@ def checkdate
   line=gets
   array=Array.new
   array=line.split(/\//)
-  for $i in 0..array.length-1
-    array[$i]=array[$i].to_i
+  for i in 0..array.length-1
+    array[i]=array[i].to_i
   end
   m,d,y=array[0],array[1],array[2]
 
