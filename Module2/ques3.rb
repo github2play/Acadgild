@@ -33,4 +33,5 @@ def ncount(num)
   end
 end
 
+puts " Enter any Number:"
 ncount(gets.to_i)
